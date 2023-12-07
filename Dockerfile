@@ -12,6 +12,7 @@ COPY . /app
 RUN pip --no-cache-dir install -r requirements.txt
 
 EXPOSE 5000
-EXPOSE 8081
 
-CMD ["python3", "app.py"]
+RUN chmod +x gunicorn_starter.sh
+
+ENTRYPOINT ["sh", "./gunicorn_starter.sh"]
