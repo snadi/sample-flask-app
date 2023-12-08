@@ -1,5 +1,7 @@
 
-python3 -m venv .venv
-source .venv/bin/activate
+python3 -m venv venv
+source venv/bin/activate
 
-gunicorn --bind 0.0.0.0:5000 app:app
+pip install -r requirements.txt
+
+gunicorn --bind 0.0.0.0:6969 app:app

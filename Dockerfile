@@ -1,14 +1,12 @@
-FROM alpine:3.19
+FROM alpine:latest
 
 RUN apk update
-RUN apk add py-pip
 RUN apk add --no-cache python3-dev 
+RUN apk add py-pip
 
+COPY . .
 
-WORKDIR /app
-COPY . /app
-
-EXPOSE 5000
+EXPOSE 6969
 
 RUN chmod +x gunicorn_starter.sh
 
