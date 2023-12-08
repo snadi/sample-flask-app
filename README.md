@@ -23,7 +23,6 @@ If you want to run it in the background (i.e., you can close the terminal but th
 3. Activate virtual environment  using `source ./ven/bin/activate`
 4. Run `flask run` and then go to [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
-
 ## Relevant tutorials
 
 1. [https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3](https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3)
