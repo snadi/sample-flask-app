@@ -9,7 +9,7 @@ def index():
 
 @app.route('/about')
 def about():
-    return render_template('page.html', message="Welcome! We are learning continuous deployment")
+    return render_template('page.html', message="Welcome! We are learning continuous deployment with an azure VM!")
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
